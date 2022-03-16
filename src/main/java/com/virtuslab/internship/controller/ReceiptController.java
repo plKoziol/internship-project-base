@@ -4,7 +4,6 @@ import com.virtuslab.internship.basket.Basket;
 import com.virtuslab.internship.receipt.Receipt;
 import com.virtuslab.internship.receipt.ReceiptGenerator;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,8 +13,8 @@ public class ReceiptController {
     /**
      * @param Basket
      * @return Receipt
-     * The Receipt method using the POST HTTP method approves / accepts a basket that must be sent in the form of JSON and in the respirator is returned by JSON from Receipt.
-     * The basket is performed on the client side, on the server side, the calculations of the given products are performed.
+     * The Receipt method is using the POST HTTP method: approved basket must be sent in the JSON format and in response return Receipt as JSON format.
+     * The basket is performed on the client side, the calculations are performed on the server side.
      */
 
     private final ReceiptGenerator receiptGenerator;
